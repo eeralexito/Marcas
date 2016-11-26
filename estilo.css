@@ -1,0 +1,11 @@
+body { 
+	background-color: lightblue;
+}
+pre{
+	color: green;
+}
+p.tab{
+		margin-left: 10cm;
+}
+h1{
+	position: center;
