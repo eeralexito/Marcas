@@ -1,11 +1,22 @@
-body { 
-	background-color: lightblue;
+body{
+background-color: cian;
+text-align: center;
+font-family: Arial;
 }
-pre{
-	color: green;
+a{
+	text-transform:uppercase;
+	text-decoration:none;
 }
-p.tab{
-		margin-left: 10cm;
+hr.verde{
+	height: 5px;
+	background-color: green;
 }
-h1{
-	position: center;
+footer{
+	background-color:black;
+	color: white;
+}
+header{
+		background-color:black;
+	color: white;
+	padding: 10px;
+	}
