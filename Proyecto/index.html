@@ -1,62 +1,110 @@
-﻿		<title>Proyecto HTML</title>
-		<meta charset "utf-8">		
+<!Doctype html>
+<html lang=es>
+<head>
+		<title>Proyecto HTML</title>
+		<meta charset "utf-8">
+		<meta name="author" content="Alex Rosca">
+			<link rel="stylesheet" type="text/css" href="estilos.css"/>
 
 </head>
+</head>
 <body>
-	<header></header>
-<p>Parrafo<p>
-<pre>Texto preformateado</pre>
-<ul>
-	<li>
-	<li>
-	<li>
-</ul>
-<ol>
-	<li>
-	<li>
-	<li>
-</ol>
-<dl>
-	<dt>Termino
-		<dd>Definicion 1
-		<dd>Definicion 2
-	</dt>
-</dl>
-<hr>
-<br>
-<i>Italica</i>
-<b>Negrita</b>
-<u>Subrayado</u>
-<em>Relevante</em>
-<strong>Importante</strong>
-<small>Menos importante</small>
-<s>Irrelevante</s>
-<wbr>Si quiere hacer el navegador un salto de linea, lo hase
-<p id=1>Agrega un id a p</p>
-	<a href=#1>Hola</a>
-	<a href=#top>Ir al principio de la pagina</a>
-	<a -dowload href=URL> Descargar </a>
-	<img width=200 height=200 alt="ayuda para minusculidos"src=URL>
+<h1>Como usar HTML5. Alex Rosca</h1>
+<p>Para poder crear una pagina web necesiaremos simplemente un bloc de notas o editor de texto. 
+Escribimos el codigo, y tendremos que guardar el fichero como <b>.html</b><br><br>
+<h2>Contenido</h2>
+<b><a href=1>Etiquetas obligatorias</a>&nbsp;&nbsp;<a href=2>Estructura básica</a>&nbsp;&nbsp;
+<a href=3>Títulos</a>&nbsp;&nbsp;<a href=4>Texto</a>&nbsp;&nbsp;<a href=5>Listas</a>&nbsp;&nbsp;
+<a href=6>Resaltado</a>&nbsp;&nbsp;</b><a href=7>Imágenes</a></b>
 
-	<!--FALTA TABLAS y CARACTERES ESPECIALES-->	
-	&lt;body&gt; 
+<h3 id=1>-Etiquetas obligatorias.</h3>
+<h4><b>&lt;!Doctype html&gt;</b><br></h4>
+<p>Con esta etiqueta mostramos el tipo de documento que es.</p>
+<h4><b>&lt;html&gt;</b></h4>
+<p> Con esta etiqueta iniciamos nuestro documento html. Si desea especificar el lenguaje de nuestro 
+documento lo puede hacer con el atributo <b>lang="es"</b> con las iniciales del idioma elegido, en nuestro 
+caso será en Español</p>
+<h4><b>&lt;head&gt;</b></h4>
+<p>Es la cabecera del documento. En esta parte se introducen metadatos.</p>
+<p class=tab><b>&lt;title&gt;</b>Titulo.<b>&lt;/title&gt;</b> <br> Para introducir el titulo de la pestaña del navegador.<br>
+				<b>&lt;meta</b> charset "utf-8"<b>&gt;</b> <br>Para indicar que utilizamos el formato
+				de transformacion unicode de 8 bits.<br> 
+				<b>&lt;meta</b> name="author" content="Nombre Apellido"<b>&gt;</b> <br>Para poner el 
+				nombre del creador del documento.</p>
+
+<h4><b>&lt;body&gt;</b></h4>
+<p>Iniciamos la etiqueta del body, que es donde meteremos todos nuestros datos que queramos que se vean 
+en la pagina web.</p>
 
 
+<h3 id=2>-Estructura básica del documento<h3>
+<h4><b>&lt;!doctype html&gt;</b></h4>
+<h4><b>&lt;html&gt;</b></h4>
+<h4><b>&nbsp;&nbsp;&nbsp;&lt;head&gt;</b></h4><br>
+<h4><b>&nbsp;&nbsp;&nbsp;&lt;/head&gt;</b></h4>
+<h4><b>&nbsp;&nbsp;&nbsp;&lt;body&gt;</b></h4><br>
+<h4><b>&nbsp;&nbsp;&nbsp;&lt;/body&gt;</b></h4>
+<h4><b>&lt;/html&gt;</b></h4>
 
 
+<h3 id=3>-Titulos</h3>
+<h1>&lt;h1&gt;Nivel 1&lt;/h1&gt;</h1>
+<h2>&lt;h2&gt;Nivel 2&lt;/h2&gt;</h2>
+<h3>&lt;h3&gt;Nivel 3&lt;/h3&gt;</h3>
+<h4>&lt;h4&gt;Nivel 4&lt;/h4&gt;</h4>
+<h5>&lt;h5&gt;Nivel 5&lt;/h5&gt;</h5>
+<h6>&lt;h6&gt;Nivel 6&lt;/h6&gt;</h6>
 
+<h3 id=4>-Texto</h3>
+<p>&lt;p&gt; Esta etiqueta sirve para introducir un parrafo&lt;/p&gt;</p>
+<pre>&lt;pre&gt; Esta etiqueta sirve para introducir un texto preformateado&lt;/pre&gt;</pre>
+&lt;hr&gt; Introducir un línea horizontal<hr>
+&lt;br&gt; Hacer un salto de línea.
 
+<h3 id=5>-Listas</h3>
+<b>&lt;ol&gt;</b> Para hacer una lista <b>ordenadada</b>.
+<p>Las listas ordenadas tienen varios atributos como <b>reversed</b> para enumerar de mayor a menor. 
+<b>start="numero"</b> para empezar en el número que le hayamos introducido y <b>type="tipo"</b>
+ para cambiar el caracter que ordena por otro caracter. </p>
+<b>&lt;li&gt;</b> Para cada <b>elemento</b> de la lista.
+<p>Atributos para el elemento li es <b>value="valor"</b> para darle un valor a cada elemento de la lista.</p>
+&lt;ol&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;li&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;li&gt;<br>
+&lt;/ol&gt;<br><br>
 
+<b>&lt;ul&gt;</b> Para hacer una lista <b>desordenada</b>.<br>
+<b>&lt;li&gt;</b> Para cada <b>elemento</b> de la lista<br>
+&lt;ul&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;li&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;li&gt;<br>
+&lt;/ul&gt;<br><br>
 
+<b>&lt;dl&gt;</b> Para hacer una lista de <b>definiciones</b>.<br>
+<b>&lt;dt&gt;</b> Para escribir terminos.<br>
+<b>&lt;dd&gt;</b> Para escribir definiciones. <br>
+&lt;dl&gt;<br>
+&nbsp;&nbsp;&lt;dt&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;<br>
+&lt;/dl&gt;<br><br>
 
+<h3 id="6">-Resaltado</h3>
+&lt;i&gt;<i>Bastardilla</i>&lt;/i&gt;<br>
+&lt;b&gt;<b>Negrita</b>&lt;/b&gt;<br>
+&lt;u&gt;<u>Subrayado</u>&lt;/u&gt;<br>
+&lt;strong&gt;<strong>IMPORTANTE</strong>&lt;/strong&gt;<br>
+&lt;small&gt;<small>Letra pequeña</small>&lt;/small&gt;<br>
+&lt;s&gt;<s>IRELEVANTE</s>&lt;/s&gt;<br><br>
 
+<h3 id=7>Enlaces</h3>
+<h4>&nbsp;&nbsp;&nbsp;Externo</h4>
+&lt;a href="ruta del enlace"&gt;Texto con hiperenlace&lt;/a&gt;
+<h4>&nbsp;&nbsp;&nbsp;Interno</h4>
+<p>&lt;p id="5"&gt;Enlace&lt;/p&gt; Necesitamos un elemento con un identificador para poder enlazarlo.<br>
+&lt;a&gt; href=5>Enlace&lt;/a&gt; Enlazamos el texto con el id <p>
 
-
-
-	<footer>
-		<address>
-
-		</address>
-	</footer>
+<h3 id=8>Imágenes</h3>
+<b>&lt;img src="ruta imagen" </b>width="anchura" height="altura" alt="texto alternativo para gente minusválida&gt;
 </body>
 </html>
